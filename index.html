@@ -4,6 +4,23 @@
 	<link  rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<title>CoolWarezSite</title>
+
+
+
+<style>
+ 
+ 
+/*Header кнопки*/
+.headbut {display: block;}
+.headbut_text{display: inline-block;}
+#headbut_news, #headbut_administration, #headbut_holder, #headbut_favorit{display: inline-block}
+
+
+
+</style>
+
+
+
 </head>
 <body>
 	<header>
@@ -11,27 +28,45 @@
 			<a href="https://uk-ua.facebook.com/"><img src="" alt="facebook"></a>
 			<a href="https://twitter.com/"><img src="" alt="twitter"></a>
 			<a href="http://www.pravda.com.ua/rus/rss-info/"><img src="" alt="rss"></a>
-			<p>Следите за нами в социальных сетях</p>
+			<span id="social_accounts">Следите за нами в социальных сетях</span>
 		</div>
 		<div class="baner">
 		</div>
 		<div class="logo">
-			<img src="" alt="">
+			<img src="" alt="logo">
 			<div class="login_panel">
-				<span id="login">Логин..</span>	
-				<input  id="login_in" type="text" name="login" value="" >
-				<span id="password">Пароль..</span>
-				<input  id="password_in" type="password" name="password" value="" >
-				<a href=""><img src="" alt="Войти"></a>
-				<a href=""><p>Регистрация на сайте!</p></a>
-				<a href=""><p>Забыли пароль?</p></a>
+				<div class="login">
+					<span class="infild" id="login">Логин..</span>	
+					<input  id="login_in" type="text" name="login" value="" >	
+				</div>
+				<div class="pass">
+					<span class="infild" id="password">Пароль..</span>
+					<input  id="password_in" type="password" name="password" value="" >
+				</div>	
+					<a  class="enter" href=""><img src="" alt="Зайти"></a>		
+				<div class="reg_forgot_pass">
+					<a id="reg" href=""><p>Регистрация на сайте!</p></a>
+					<a id="forgot_pass" href=""><p>Забыли пароль?</p></a>
+				</div>
 			</div>
 		</div>
-		<div class="button">
-			<a href=""><img src="" alt=""></a><p>Добавить новость</p>
-			<a href=""><img src="" alt=""></a><p>Связаться с Администрацией</p>
-			<a href=""><img src="" alt=""></a><p>Информация для правообладателей</p>
-			<a href=""><img src="" alt=""></a><p>Добавить в избранное!</p>	
+		<div class="headbuttons">
+			<a class="headbut" id="headbut_news" href="">
+				<img  src="" alt="Добавить новость">
+				<span class="headbut_text">Добавить <br> новость</span>
+			</a>
+			<a class="headbut" id="headbut_administration"href="">
+				<img  src="" alt="Связаться с Администрацией">
+				<span class="headbut_text">Связаться с <br> Администрацией</span>
+			</a>
+			<a class="headbut" id="headbut_holder" href="">
+				<img  src="" alt="Информация для Правообладателей">
+				<span class="headbut_text">Информация для <br> Правообладателей</span>
+			</a>
+			<a class="headbut" id="headbut_favorit" href="">
+				<img  src="" alt="Добавить в избранное!">
+				<span class="headbut_text">Добавить в <br> избранное!</span>
+			</a>
 		</div>
 		<div class="menu">
 			<menu>
@@ -43,19 +78,104 @@
 					<li>Реклама</li>
 				</ul>	
 			</menu>
-			<span id="search">Введите текст для поиска..</span>
+			<span class="infild" id="search">Введите текст для поиска..</span>
 			<input id="search_in" type="search" value="">
 			<button><img id="search_b" src=""></button>
 		</div>
-		
-
-
-
-
+		<div class="bottom_head">
+			<div class="speedbar">	<a href="">speedbar</a> </div>
+			<div class="messages">
+				<p>Обновление сайта v.2.0 <br>Уважаемые пользователи портала, сегодня в 12:00 был обновлен сайт CMS нашего портала. Администрация</p>
+			</div>
+		</div>
 	</header>
 	<main>
 		<div class="page_body">
-			
+			<section>
+				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+				<div class="about">
+					<div class="autor"></div>
+					<div class="category"></div>
+					<div class="date"></div>
+					<div class="like">
+						<img src="" alt="" class="like_im">
+					</div>
+					<div class="edit">
+						<img src="" alt="" class="edit_im">
+					</div>
+					<div class="news">
+						<div class="news_im">
+							<img src="" alt="Eleanor CMS" class="img_news">
+							<div class="news_text">
+								<h4>Спасибо за установку системы!</h4>
+								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+							</div>
+						</div>
+						<div class="coments">
+							<div class="coment">
+								<span class="comen"></span>
+								<span class="counter"></span>
+								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+				<div class="about">
+					<div class="like">
+						<img src="" alt="" class="like_im">
+					</div>
+					<div class="edit">
+						<img src="" alt="" class="edit_im">
+					</div>
+					<div class="news">
+						<div class="news_im">
+							<img src="" alt="Eleanor CMS" class="img_news">
+							<div class="news_text">
+								<h4>Спасибо за установку системы!</h4>
+								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+							</div>
+						</div>
+						<div class="coments">
+							<div class="coment">
+								<span class="comen"></span>
+								<span class="counter"></span>
+								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+				<div class="about">
+					<div class="like">
+						<img src="" alt="" class="like_im">
+					</div>
+					<div class="edit">
+						<img src="" alt="" class="edit_im">
+					</div>
+					<div class="news">
+						<div class="news_im">
+							<img src="" alt="Eleanor CMS" class="img_news">
+							<div class="news_text">
+								<h4>Спасибо за установку системы!</h4>
+								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+							</div>
+						</div>
+						<div class="coments">
+							<div class="coment">
+								<span class="comen"></span>
+								<span class="counter"></span>
+								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</div>
 		<div class="side_bar">
 			
