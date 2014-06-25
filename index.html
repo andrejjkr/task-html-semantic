@@ -3,6 +3,7 @@
 	<meta charset="UTF-8">
 	<link  rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
+	
 	<title>CoolWarezSite</title>
 
 
@@ -10,29 +11,29 @@
 <style>
  
  
-/*Header кнопки*/
+/*Header кнопки
 .headbut {display: block;}
 .headbut_text{display: inline-block;}
 #headbut_news, #headbut_administration, #headbut_holder, #headbut_favorit{display: inline-block}
-
-
+*/
 
 </style>
 
 </head>
 <body>
 	<header>
-		<div class="social_accounts">
-			<a href="https://uk-ua.facebook.com/"><img src="" alt="facebook"></a>
-			<a href="https://twitter.com/"><img src="" alt="twitter"></a>
-			<a href="http://www.pravda.com.ua/rus/rss-info/"><img src="" alt="rss"></a>
+		<div class="social-accounts">
+			<a id="facebook" href="https://uk-ua.facebook.com/"><img id="facebook_img" src="" alt="facebook"></a>
+			<a id="twitter" href="https://twitter.com/"><img id="twitter_img" src="" alt="twitter"></a>
+			<a id="rss" href="http://www.pravda.com.ua/rus/rss-info/"><img id="rss_img" src="" alt="rss"></a>
 			<span id="social_accounts">Следите за нами в социальных сетях</span>
 		</div>
 		<div class="baner">
+			<a id="baner" href=""><img id="baner_img" src="" alt="baner"></a>
 		</div>
 		<div class="logo">
-			<img src="" alt="logo">
-			<div class="login_panel">
+			<img id="logo" src="" alt="logo">
+			<div class="login-panel">
 				<div class="login">
 					<span class="infild" id="login">Логин..</span>	
 					<input  id="login_in" type="text" name="login" value="" >	
@@ -42,7 +43,7 @@
 					<input  id="password_in" type="password" name="password" value="" >
 				</div>	
 					<a  class="enter" href=""><img src="" alt="Зайти"></a>		
-				<div class="reg_forgot_pass">
+				<div class="reg-forgot_pass">
 					<a id="reg" href=""><p>Регистрация на сайте!</p></a>
 					<a id="forgot_pass" href=""><p>Забыли пароль?</p></a>
 				</div>
@@ -51,131 +52,195 @@
 		<div class="headbuttons">
 			<a class="headbut" id="headbut_news" href="">
 				<img  src="" alt="Добавить новость">
-				<span class="headbut_text">Добавить <br> новость</span>
+				<span class="headbut-text">Добавить <br> новость</span>
 			</a>
-			<a class="headbut" id="headbut_administration"href="">
+			<a class="headbut" id="headbut_administration" href="">
 				<img  src="" alt="Связаться с Администрацией">
-				<span class="headbut_text">Связаться с <br> Администрацией</span>
+				<span class="headbut-text">Связаться с <br> Администрацией</span>
 			</a>
 			<a class="headbut" id="headbut_holder" href="">
 				<img  src="" alt="Информация для Правообладателей">
-				<span class="headbut_text">Информация для <br> Правообладателей</span>
+				<span class="headbut-text">Информация для <br> Правообладателей</span>
 			</a>
 			<a class="headbut" id="headbut_favorit" href="">
 				<img  src="" alt="Добавить в избранное!">
-				<span class="headbut_text">Добавить в <br> избранное!</span>
+				<span class="headbut-text">Добавить в <br> избранное!</span>
 			</a>
 		</div>
-		<div class="menu">
-			<menu>
-				<ul>
-					<li>Главная</li>
-					<li>Форум</li>
-					<li>Контакты</li>
-					<li>Статистика</li>
-					<li>Реклама</li>
-				</ul>	
-			</menu>
+		<nav class="menu">
+			<ul>
+				<li><a href="">Главная</a></li>
+				<li><a href="">Форум</a></li>
+				<li><a href="">Контакты</a></li>
+				<li><a href="">Статистика</a></li>
+				<li><a href="">Реклама</a></li>
+			</ul>
+		</nav>	
+		<div class="search">
 			<span class="infild" id="search">Введите текст для поиска..</span>
 			<input id="search_in" type="search" value="">
-			<button><img id="search_b" src=""></button>
+			<img id="search_img" src="" alt="Поиск">
 		</div>
-		<div class="bottom_head">
-			<div class="speedbar">	<a href="">speedbar</a> </div>
+		<div class="bottom-head">
+			<div class="speedbar">
+				<a href="">speedbar</a>
+			</div>
 			<div class="messages">
 				<p>Обновление сайта v.2.0 <br>Уважаемые пользователи портала, сегодня в 12:00 был обновлен сайт CMS нашего портала. Администрация</p>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="page_body">
-			<section>
-				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+		<div class="page-body">
+			<section class="note" id="note_1" >
+				<div class="news-head">
+					<h3>Тестовая новость для макета от RealARTs</h3>
+				</div>
 				<div class="about">
-					<div class="autor"></div>
-					<div class="category"></div>
-					<div class="date"></div>
+					<div class="autor"> 
+						<span>Автор: </span>
+						<a href="">RealARTs</a>
+					</div>
+					<div class="category">
+						<span>Категория: </span>
+						<a href="">Новости</a>
+					</div>
+					<div class="date">
+						<span>Дата: Сегодня, <time pubdate datetime="12:00">12:00</time></span>
+						
+					</div>
+					<div class="review">
+						<span>Просчмотров: </span>
+						<span class="countre-review">10</span>
+					</div>
 					<div class="like">
-						<img src="" alt="" class="like_im">
+						<img class="like-img" onclick="" src="" alt="like" > 
 					</div>
 					<div class="edit">
-						<img src="" alt="" class="edit_im">
+						<a href=""><img class="edit-img" src="" alt="Редактировать"></a>
 					</div>
-					<div class="news">
-						<div class="news_im">
-							<img src="" alt="Eleanor CMS" class="img_news">
-							<div class="news_text">
-								<h4>Спасибо за установку системы!</h4>
-								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
-							</div>
-						</div>
-						<div class="coments">
-							<div class="coment">
-								<span class="comen"></span>
-								<span class="counter"></span>
-								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
-							</div>
-						</div>
+				</div>
+				<div class="news">
+					<div class="news-img">
+						<img class="img-news" src="" alt="Eleanor CMS">
+					</div>
+					<article class="news-text" id="news_1">
+						<h4>Спасибо за установку системы!</h4>
+						<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+					</article>
+				</div>
+				<div class="coments">
+					<div class="coment">
+						<span class="comen">Новость пркоментировали: </span>
+						<span class="counter-coment">657</span>
+						<span class="comen">раз.</span>
+					</div>
+					<div class="more">
+						<a href=""><img class="more-img" src="" alt="ПОДРОБНЕЕ"></a>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+			<section class="note" id="note_2">
+				<div class="news-head">
+					<h3>Тестовая новость для макета от RealARTs</h3>
+				</div>
 				<div class="about">
+					<div class="autor"> 
+						<span>Автор: </span>
+						<a href="">RealARTs</a>
+					</div>
+					<div class="category">
+						<span>Категория: </span>
+						<a href="">Новости</a>
+					</div>
+					<div class="date">
+						<span>Дата: Сегодня, <time pubdate datetime="12:00">12:00</time></span>
+						
+					</div>
+					<div class="review">
+						<span>Просчмотров: </span>
+						<span class="countre-review">10</span>
+					</div>
 					<div class="like">
-						<img src="" alt="" class="like_im">
+						<img class="like-img" onclick="" src="" alt="like" > 
 					</div>
 					<div class="edit">
-						<img src="" alt="" class="edit_im">
+						<a href=""><img class="edit-img" src="" alt="Редактировать"></a>
 					</div>
-					<div class="news">
-						<div class="news_im">
-							<img src="" alt="Eleanor CMS" class="img_news">
-							<div class="news_text">
-								<h4>Спасибо за установку системы!</h4>
-								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
-							</div>
-						</div>
-						<div class="coments">
-							<div class="coment">
-								<span class="comen"></span>
-								<span class="counter"></span>
-								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
-							</div>
-						</div>
+				</div>
+				<div class="news">
+					<div class="news-img">
+						<img class="img-news" src="" alt="Eleanor CMS">
+					</div>
+					<article class="news-text" id="news_1">
+						<h4>Спасибо за установку системы!</h4>
+						<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+					</article>
+				</div>
+				<div class="coments">
+					<div class="coment">
+						<span class="comen">Новость пркоментировали: </span>
+						<span class="counter-coment">657</span>
+						<span class="comen">раз.</span>
+					</div>
+					<div class="more">
+						<a href=""><img class="more-img" src="" alt="ПОДРОБНЕЕ"></a>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div class="nes_head"><p>Тестовая новость для макета от RealARTs</p></div>
+			<section class="note" id="note_3">
+				<div class="news-head">
+					<h3>Тестовая новость для макета от RealARTs</h3>
+				</div>
 				<div class="about">
+					<div class="autor"> 
+						<span>Автор: </span>
+						<a href="">RealARTs</a>
+					</div>
+					<div class="category">
+						<span>Категория: </span>
+						<a href="">Новости</a>
+					</div>
+					<div class="date">
+						<span>Дата: Сегодня, <time pubdate datetime="12:00">12:00</time></span>
+						
+					</div>
+					<div class="review">
+						<span>Просчмотров: </span>
+						<span class="countre-review">10</span>
+					</div>
 					<div class="like">
-						<img src="" alt="" class="like_im">
+						<img class="like-img" onclick="" src="" alt="like" > 
 					</div>
 					<div class="edit">
-						<img src="" alt="" class="edit_im">
-					</div>
-					<div class="news">
-						<div class="news_im">
-							<img src="" alt="Eleanor CMS" class="img_news">
-							<div class="news_text">
-								<h4>Спасибо за установку системы!</h4>
-								<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
-							</div>
-						</div>
-						<div class="coments">
-							<div class="coment">
-								<span class="comen"></span>
-								<span class="counter"></span>
-								<div class="more"><a href=""><img src="" alt="" class="more_im"></a></div>
-							</div>
-						</div>
+						<a href=""><img class="edit-img" src="" alt="Редактировать"></a>
 					</div>
 				</div>
-			</section>
+				<div class="news">
+					<div class="news-img">
+						<img class="img-news" src="" alt="Eleanor CMS">
+					</div>
+					<article class="news-text" id="news_1">
+						<h4>Спасибо за установку системы!</h4>
+						<span>Разработка над системой длится около года, и по результатам предварительного тестирования, система показывает хорошие результаты.<br>На даный момент система на 100% модульная, что даёт разработчикам свободу при модификации. ЧПУ позволяет генерировать человеко-понятные ссылки с поддержкой кириллицы. Система может быть интегрирована с любым скриптом. Уже сейчас, на стадии RC, система полностью интегрируется с Invision Power Board, а так же в ближайшем будущем, планируется интеграция с vBulletin, Coppermine Gallery и другими продуктами.<br>При разработке Eleanor CMS, безопасность стояла на первом месте, мы постарались сделать для вас не только удобную, но и безопасную систему. В Eleanor CMS внедрены средства для работы с БД, способные полностью исключить возможность SQL инъекции.</span>
+					</article>
+				</div>
+				<div class="share">
+					<div class="pip-bg pip-btn">
+						<a class="pip-plus" href="//pip.qip.ru/" target="_blank"></a>
+						<span class="pip_space"> </span>
+						<a href="http://twitter.com" target="_blank"></a>
+						<a href="http://vk.com" target="_blank"></a>
+						<a href="http://www.facebook.com" target="_blank"></a>
+						<a href="http://ok.ru" target="_blank"></a>
+						<a href="http://connect.mail.ru" target="_blank"></a>
+						<a class="pip_bg pip_hover" href="//pip.qip.ru/" target="_blank"></a>
+					</div>
 
+				</div>
+			</section>
 		</div>
-		<div class="side_bar">
+		<div class="side-bar">
 			
 		</div>	
 	</main>
