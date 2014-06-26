@@ -9,8 +9,7 @@
 <body>
 	<header>
 		<ul class="social">
-			<li><a class="facebook" href="https://uk-ua.facebook.com/" target="_blank" title="facebook"
-></a></li>
+			<li><a class="facebook" href="https://uk-ua.facebook.com/" target="_blank" title="facebook"></a></li>
 			<li><a class="twitter" href="https://twitter.com/" target="_blank" title="twitter"></a></li>
 			<li><a class="rss" href="http://www.pravda.com.ua/rus/rss-info/" target="_blank" title="rss"></a></li>
 			<li><span id="social_accounts">Следите за нами в социальных сетях</span></li>
@@ -33,24 +32,32 @@
 			<li><a id="reg" href="">Регистрация на сайте!</a></li>
 			<li><a id="forgot_pass" href="">Забыли пароль?</a></li>
 		</ul>		
-		<div class="headbuttons">
-			<a class="headbut" id="headbut_news" href="">
-				<img  src="" alt="Добавить новость">
-				<span class="headbut-text">Добавить <br> новость</span>
-			</a>
-			<a class="headbut" id="headbut_administration" href="">
-				<img  src="" alt="Связаться с Администрацией">
-				<span class="headbut-text">Связаться с <br> Администрацией</span>
-			</a>
-			<a class="headbut" id="headbut_holder" href="">
-				<img  src="" alt="Информация для Правообладателей">
-				<span class="headbut-text">Информация для <br> Правообладателей</span>
-			</a>
-			<a class="headbut" id="headbut_favorit" href="">
-				<img  src="" alt="Добавить в избранное!">
-				<span class="headbut-text">Добавить в <br> избранное!</span>
-			</a>
-		</div>
+		<ul class="headbuttons">
+			<li>
+				<a class="headbut" id="headbut_news" href="">
+					<img  src="" alt="Добавить новость">
+					<span class="headbut-text">Добавить новость</span>
+				</a>
+			</li>
+			<li>
+				<a class="headbut" id="headbut_administration" href="">
+					<img  src="" alt="Связаться с Администрацией">
+					<span class="headbut-text">Связаться с Администрацией</span>
+				</a>
+			</li>
+			<li>
+				<a class="headbut" id="headbut_holder" href="">
+					<img  src="" alt="Информация для Правообладателей">
+					<span class="headbut-text">Информация для Правообладателей</span>
+				</a>
+			</li>
+			<li>
+				<a class="headbut" id="headbut_favorit" href="">
+					<img  src="" alt="Добавить в избранное!">
+					<span class="headbut-text">Добавить в избранное!</span>
+				</a>
+			</li>
+		</ul>
 		<nav class="menu">
 			<ul>
 				<li><a href="">Главная</a></li>
@@ -73,32 +80,32 @@
 		</div>
 	</header>
 	<main class="content">
+		<div class="main-head">
+		</div>	
 		<section class="note" id="note_1" >
 			<div class="note-head">
 				<h3>Тестовая новость для макета от RealARTs</h3>
 			</div>
 			<div class="about">
-				<div class="autor"> 
+				<span class="autor"> 
 					<span>Автор: </span>
 					<a href="">RealARTs</a>
-				</div>
-				<div class="category">
+				</span>
+				<span class="category">
 					<span>Категория: </span>
 					<a href="">Новости</a>
-				</div>
-				<div class="date">
+				</span>
+				<span class="date">
 					<span>Дата: Сегодня, <time datetime="12:00">12:00</time></span>
-				</div>
-				<div class="review">
+				</span>
+				<span class="review">
 					<span>Просчмотров: </span>
 					<span class="countre-review">10</span>
-				</div>
-				<div class="like">
-					<img class="like-img" onclick="" src="" alt="like" > 
-				</div>
-				<div class="edit">
-					<a href=""><img src="" alt="Редактировать"></a>
-				</div>
+				</span>
+				<span class="like-edit">
+					<span onclick="" title="Понравилось">&#9829; </span>
+					<a class="edit" href="" title="Редактировать">&#9998;</a>
+				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
@@ -110,50 +117,44 @@
 				</article>
 			</div>
 			<div class="coments">
-				<div class="coment">
-					<span class="comen">Новость пркоментировали: </span>
-					<span class="counter-coment">657</span>
-					<span class="comen">раз.</span>
-				</div>
-				<div class="more">
-					<a href=""><img class="more-img" src="" alt="ПОДРОБНЕЕ"></a>
-				</div>
-			</div>
+				<span class="coment">Новость пркоментировали: </span>
+				<span class="counter-coment">657</span>
+				<span class="comen">раз.</span>
+				<span class="more"><a href="">ПОДРОБНЕЕ</a>
+				</span>
+			</div>	
 		</section>
 
 
 
-		<section class="note" id="note_2">
+		<section class="note" id="note_2" >
 			<div class="note-head">
 				<h3>Тестовая новость для макета от RealARTs</h3>
 			</div>
 			<div class="about">
-				<div class="autor"> 
+				<span class="autor"> 
 					<span>Автор: </span>
 					<a href="">RealARTs</a>
-				</div>
-				<div class="category">
+				</span>
+				<span class="category">
 					<span>Категория: </span>
 					<a href="">Новости</a>
-				</div>
-				<div class="date">
+				</span>
+				<span class="date">
 					<span>Дата: Сегодня, <time datetime="12:00">12:00</time></span>
-					
-				</div>
-				<div class="review">
+				</span>
+				<span class="review">
 					<span>Просчмотров: </span>
 					<span class="countre-review">10</span>
-				</div>
-				<div class="like">
-					<img class="like-img" onclick="" src="" alt="like" > 
-				</div>
-				<div class="edit">
-					<a href=""><img class="edit-img" src="" alt="Редактировать"></a>
-				</div>
+				</span>
+				<span class="like-edit">
+					<span onclick="" title="Понравилось">&#9829; </span>
+					<a class="edit" href="" title="Редактировать">&#9998;</a>
+				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
-					<img class="img-news" src="" alt="Eleanor CMS">
+					<img src="" alt="Eleanor CMS">
 				</div>
 				<article class="news-text" id="news_2">
 					<h4>Спасибо за установку системы!</h4>
@@ -161,47 +162,42 @@
 				</article>
 			</div>
 			<div class="coments">
-				<div class="coment">
-					<span class="comen">Новость пркоментировали: </span>
-					<span class="counter-coment">657</span>
-					<span class="comen">раз.</span>
-				</div>
-				<div class="more">
-					<a href=""><img class="more-img" src="" alt="ПОДРОБНЕЕ"></a>
-				</div>
-			</div>
+				<span class="coment">Новость пркоментировали: </span>
+				<span class="counter-coment">657</span>
+				<span class="comen">раз.</span>
+				<span class="more"><a href="">ПОДРОБНЕЕ</a>
+				</span>
+			</div>	
 		</section>
-		<section class="note" id="note_3">
-			<div class="news-head">
+
+		<section class="note" id="note_3" >
+			<div class="note-head">
 				<h3>Тестовая новость для макета от RealARTs</h3>
 			</div>
 			<div class="about">
-				<div class="autor"> 
+				<span class="autor"> 
 					<span>Автор: </span>
 					<a href="">RealARTs</a>
-				</div>
-				<div class="category">
+				</span>
+				<span class="category">
 					<span>Категория: </span>
 					<a href="">Новости</a>
-				</div>
-				<div class="date">
+				</span>
+				<span class="date">
 					<span>Дата: Сегодня, <time datetime="12:00">12:00</time></span>
-					
-				</div>
-				<div class="review">
+				</span>
+				<span class="review">
 					<span>Просчмотров: </span>
 					<span class="countre-review">10</span>
-				</div>
-				<div class="like">
-					<img class="like-img" onclick="" src="" alt="like" > 
-				</div>
-				<div class="edit">
-					<a href=""><img class="edit-img" src="" alt="Редактировать"></a>
-				</div>
+				</span>
+				<span class="like-edit">
+					<span onclick="" title="Понравилось">&#9829; </span>
+					<a class="edit" href="" title="Редактировать">&#9998;</a>
+				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
-					<img class="img-news" src="" alt="Eleanor CMS">
+					<img src="" alt="Eleanor CMS">
 				</div>
 				<article class="news-text" id="news_3">
 					<h4>Спасибо за установку системы!</h4>
@@ -212,19 +208,42 @@
 				<div class="pip-bg pip-btn">
 					<a class="pip-plus" href="//pip.qip.ru/" target="_blank"></a>
 					<span class="pip_space"> </span>
-					<a href="http://twitter.com" target="_blank"></a>
-					<a href="http://vk.com" target="_blank"></a>
-					<a href="http://www.facebook.com" target="_blank"></a>
-					<a href="http://ok.ru" target="_blank"></a>
-					<a href="http://connect.mail.ru" target="_blank"></a>
-					<a class="pip_bg pip_hover" href="//pip.qip.ru/" target="_blank"></a>
+					<a href="http://twitter.com" target="_blank" title="twitter"></a>
+					<a href="http://vk.com" target="_blank" title="vk.com"></a>
+					<a href="http://www.facebook.com" target="_blank" title="facebook"></a>
+					<a href="http://ok.ru" target="_blank" title="ok.ru"></a>
+					<a href="http://connect.mail.ru" target="_blank" title="mail.ru"></a>
+					<a class="pip_bg pip_hover" href="//pip.qip.ru/" target="_blank" title="pip"></a>
 				</div>
+				<span class="share-news">
+					<span>Поделиться этой новостью с друзьями!</span>
+					<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+				</span>
 			</div>
 		</section>
+		<section>
+		</section>
+		<section>
+		</section>
+		<div class="main-footer">
+		</div>
 	</main>
 	<aside class="side-bar">
-			
-		</aside>	
+		<div class="mini-chat">
+			<div class="chat-head">
+				<span class="quote">&#187;</span><span>Мини-чат</span>
+			</div>
+			<div class="record">
+				<span class="autor-record">RealARTs</span><span class="text-record">: Хороший дизайн, можно узнать, а кто рисовал дизайн для сайта?</span>
+			</div>
+			<div class="record">
+				<span class="autor-record">Bagner</span><span class="text-record">Вроде насколько я помню, какая то компания... Ну у админа спросите)</span>
+			</div>
+			<div class="record">
+				<span class="autor-record">Entrol</span><span class="text-record">Ку ку.. Есть кто в чате?:)</span>
+			</div>
+		</div>
+	</aside>	
 	<footer>
 		
 	</footer>	
