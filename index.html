@@ -5,6 +5,12 @@
 	<script type="text/javascript" src="scripts/script.js"></script>
 	
 	<title>CoolWarezsite</title>
+
+	<style>
+   input:: value {
+    background-color: #FFA07A;
+   }
+    </style>
 </head>
 <body>
 	<header>
@@ -17,7 +23,7 @@
 		<iframe class="banner">
 			<object></object>
 		</iframe>
-		<a href="" class="logo" id="logo_header">
+		<a href="index.html" class="logo" id="logo_head">
 			<ul class="logo">
 			  <li class="coolw">coolwarezsite.com</li>
 			  <li class="caption-logo">Современный варез портал</li>
@@ -26,34 +32,34 @@
 		<form class="login-panel">
 			<input  id="login_in" type="text" name="login" placeholder="Логин..">
 			<input  id="password_in" type="password" name="password" placeholder="Пароль.." >
+			<button class="enter" type="submit" title="Зайти">Зайти</button>
 		</form>	
-			<a  class="enter" href=""><img src="" alt="Зайти"></a>		
 		<ul class="reg-forgot_pass">
-			<li><a id="reg" href="">Регистрация на сайте!</a></li>
+			<li><a id="registration" href="">Регистрация на сайте!</a></li>
 			<li><a id="forgot_pass" href="">Забыли пароль?</a></li>
 		</ul>		
 		<ul class="headbuttons">
 			<li>
 				<a class="headbut" id="headbut_news" href="">
-					<img  src="" alt="Добавить новость">
+					<img  src="assets/images/1.jpg" alt="Добавить новость">
 					<span class="headbut-text">Добавить новость</span>
 				</a>
 			</li>
 			<li>
 				<a class="headbut" id="headbut_administration" href="">
-					<img  src="" alt="Связаться с Администрацией">
+					<img  src="assets/images/1.jpg" alt="Связаться с Администрацией">
 					<span class="headbut-text">Связаться с Администрацией</span>
 				</a>
 			</li>
 			<li>
 				<a class="headbut" id="headbut_holder" href="">
-					<img  src="" alt="Информация для Правообладателей">
+					<img  src="assets/images/1.jpg" alt="Информация для Правообладателей">
 					<span class="headbut-text">Информация для Правообладателей</span>
 				</a>
 			</li>
 			<li>
 				<a class="headbut" id="headbut_favorit" href="">
-					<img  src="" alt="Добавить в избранное!">
+					<img  src="assets/images/1.jpg" alt="Добавить в избранное!">
 					<span class="headbut-text">Добавить в избранное!</span>
 				</a>
 			</li>
@@ -69,7 +75,7 @@
 		</nav>	
 		<form class="search">
 			<input id="search_in" type="search" value="" placeholder="Введите текст для поиска..">
-			<button> </button>
+			<button type="button" title="Найти">&#8981;</button>
 		</form>
 		<div class="bottom-head">
 			<div class="breadcrumb">
@@ -103,13 +109,13 @@
 					<span class="countre-review">10</span>
 				</span>
 				<span class="like-edit">
-					<span onclick="" title="Понравилось">&#9829; </span>
+					<span onclick="" title="Понравилось">&hearts; </span>
 					<a class="edit" href="" title="Редактировать">&#9998;</a>
 				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
-					<img src="" alt="Eleanor CMS">
+					<img src="assets/images/1.jpg" alt="Eleanor CMS">
 				</div>
 				<article class="news-text" id="news_1">
 					<h4>Спасибо за установку системы!</h4>
@@ -148,13 +154,13 @@
 					<span class="countre-review">10</span>
 				</span>
 				<span class="like-edit">
-					<span onclick="" title="Понравилось">&#9829; </span>
+					<span onclick="" title="Понравилось">&hearts; </span>
 					<a class="edit" href="" title="Редактировать">&#9998;</a>
 				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
-					<img src="" alt="Eleanor CMS">
+					<img src="assets/images/1.jpg" alt="Eleanor CMS">
 				</div>
 				<article class="news-text" id="news_2">
 					<h4>Спасибо за установку системы!</h4>
@@ -191,13 +197,13 @@
 					<span class="countre-review">10</span>
 				</span>
 				<span class="like-edit">
-					<span onclick="" title="Понравилось">&#9829; </span>
+					<span onclick="" title="Понравилось">&hearts; </span>
 					<a class="edit" href="" title="Редактировать">&#9998;</a>
 				</span>
 			</div>
 			<div class="news">
 				<div class="news-img">
-					<img src="" alt="Eleanor CMS">
+					<img src="assets/images/1.jpg" alt="Eleanor CMS">
 				</div>
 				<article class="news-text" id="news_3">
 					<h4>Спасибо за установку системы!</h4>
@@ -217,35 +223,189 @@
 				</div>
 				<span class="share-news">
 					<span>Поделиться этой новостью с друзьями!</span>
-					<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+					<span class="star">
+						<span onmouseover="" onmouseout="" onclick="" class="star-1" id="star_1" >&#9733;</span>
+						<span onmouseover="" onmouseout="" onclick="" class="star-2" id="star_2" >&#9733;</span>
+						<span onmouseover="" onmouseout="" onclick="" class="star-3" id="star_3" >&#9733;</span>
+						<span onmouseover="" onmouseout="" onclick="" class="star-4" id="star_4" >&#9733;</span>
+						<span onmouseover="" onmouseout="" onclick="" class="star-5" id="star_5" >&#9733;</span>
+					</span>
 				</span>
 			</div>
+		</section>	
+		<section class="note" id="note_4" >
+			<div class="note-head">
+				<h3></h3>
+			</div>
+			<div class="about">
+				<span class="autor"> 
+					<span></span>
+					<a href=""></a>
+				</span>
+				<span class="category">
+					<span></span>
+					<a href=""></a>
+				</span>
+				<span class="date">
+					<span><time datetime=""></time></span>
+				</span>
+				<span class="review">
+					<span></span>
+					<span class="countre-review"></span>
+				</span>
+				<span class="like-edit">
+					<span onclick="" title="Понравилось"></span>
+					<a class="edit" href="" title="Редактировать"></a>
+				</span>
+			</div>
+			<div class="news">
+				<div class="news-img">
+					<img src="" alt="">
+				</div>
+				<article class="news-text" id="news_4">
+					<h4></h4>
+					<span></span>
+				</article>
+			</div>
+			<div class="coments">
+				<span class="coment"></span>
+				<span class="counter-coment"></span>
+				<span class="comen"></span>
+				<span class="more"><a href=""></a>
+				</span>
+			</div>	
 		</section>
-		<section>
+		<section class="note" id="note_5" >
+			<div class="note-head">
+				<h3></h3>
+			</div>
+			<div class="about">
+				<span class="autor"> 
+					<span></span>
+					<a href=""></a>
+				</span>
+				<span class="category">
+					<span></span>
+					<a href=""></a>
+				</span>
+				<span class="date">
+					<span><time datetime=""></time></span>
+				</span>
+				<span class="review">
+					<span></span>
+					<span class="countre-review"></span>
+				</span>
+				<span class="like-edit">
+					<span onclick="" title="Понравилось"></span>
+					<a class="edit" href="" title="Редактировать"></a>
+				</span>
+			</div>
+			<div class="news">
+				<div class="news-img">
+					<img src="" alt="">
+				</div>
+				<article class="news-text" id="news_5">
+					<h4></h4>
+					<span></span>
+				</article>
+			</div>
+			<div class="coments">
+				<span class="coment"></span>
+				<span class="counter-coment"></span>
+				<span class="comen"></span>
+				<span class="more"><a href=""></a>
+				</span>
+			</div>	
 		</section>
-		<section>
-		</section>
-		<div class="main-footer">
+		<div class="main-foot">
+			<span class="mess">Уважаемый посетитель, Вы зашли на сайт как незарегистрированый пользователь.<br> Мы рекомендуем Вам <a href="" class="reg">зарегистрироваться</a> либо войти на сайт под своим именем.</span>
+			<ul class="nav_pages">
+				<li><a class="active" href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li><a href="">7</a></li>
+				<li><a href="">8</a></li>
+				<li><a href="">9</a></li>
+				<li><a href="">10</a></li>
+				<li><a class="three-point" href="">...</a></li>
+				<li><a href="">65</a></li>
+				<li></li>
+				<li><a class="back" href="">Назад</a></li>
+				<li><a class="onward" href="">Вперед</a></li>
+			</ul>
 		</div>
 	</main>
 	<aside class="side-bar">
 		<div class="mini-chat">
 			<div class="chat-head">
-				<span class="quote">&#187;</span><span>Мини-чат</span>
+				<span class="quote" id="quote-chat">&#187;</span><span>Мини-чат</span>
 			</div>
-			<div class="record">
+			<div class="record" id="record_1">
 				<span class="autor-record">RealARTs</span><span class="text-record">: Хороший дизайн, можно узнать, а кто рисовал дизайн для сайта?</span>
 			</div>
-			<div class="record">
-				<span class="autor-record">Bagner</span><span class="text-record">Вроде насколько я помню, какая то компания... Ну у админа спросите)</span>
+			<div class="record" id="record_2">
+				<span class="autor-record">Bagner</span><span class="text-record">: Вроде насколько я помню, какая то компания... Ну у админа спросите)</span>
 			</div>
-			<div class="record">
-				<span class="autor-record">Entrol</span><span class="text-record">Ку ку.. Есть кто в чате?:)</span>
+			<div class="record" id="record_3">
+				<span class="autor-record">Entrol</span><span class="text-record">: Ку ку.. Есть кто в чате?:)</span>
+			</div>
+			<div class="enter-text">
+				<form class="buttonsenter-text">
+					<div class="b-enter-text">
+						<button class="b-bold" type="button" title="Жирный">B</button>
+						<button class="b-italic" type="button" title="Курсив">i</button>
+						<button class="b-underline" type="button" title="Подчеркнутый">U</button>
+						<button class="b-line-through" type="button" title="Перечеркнутый">&#580;</button>
+						<button class="b-line-through" type="button" title="Смайлик"><img class="smile" src="" alt="Смайлик"></button>
+					</div> 
+					<textarea name="mini-chat" id="mini-chat" cols="35" rows="5"></textarea>
+					<div class="b-send-review">
+						<button class="b-send" type="submit" title="Отправить">Отправить</button>
+						<button class="b-review" type="button" title="Просмотр">Просмотр</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="lastcomments">
+			<div class="lastcomments-head">
+				<span class="quote" id="quote-coment">&#187;</span><span>Последние комментарии</span>
+			</div>
+			<div class="last-comments">
+				<div class="last-comment" id="last_comment_1">
+					<a class="user-avatar" href=""><img src="assets/images/1.jpg" alt="" class="avatar"></a>
+					<span class="users">Написал(ла): RealARTs1</span><br>
+					<span class="in-categories">В новости: Шаблон для людей</span> <br>
+					<span class="when">Когда?: Вчера в<time datetime="03:15:14">03:15:14</time></span>
+				</div>
+				<div class="last-comment" id="last_comment_2">
+					<a class="user-avatar" href=""><img src="assets/images/1.jpg" alt="" class="avatar"></a>
+					<span class="users">Написал(ла): RealARTs1</span><br>
+					<span class="in-categories">В новости: Шаблон для людей</span> <br>
+					<span class="when">Когда?: Вчера в<time datetime="03:15:14">03:15:14</time></span>
+				</div>
+				<div class="last-comment" id="last_comment_3">
+					<a class="user-avatar" href=""><img src="assets/images/1.jpg" alt="" class="avatar"></a>
+					<span class="users">Написал(ла): RealARTs1</span><br>
+					<span class="in-categories">В новости: Шаблон для людей</span> <br>
+					<span class="when">Когда?: Вчера в<time datetime="03:15:14">03:15:14</time></span>
+				</div>
 			</div>
 		</div>
 	</aside>	
 	<footer>
-		
+		<a href="" class="logo" id="logo_footer">
+			<ul class="logo">
+			  <li class="coolw">coolwarezsite.com</li>
+			  <li class="caption-logo">Современный варез портал</li>
+			</ul>
+		</a>
+		<iframe class="banner">
+			<object></object>
+		</iframe>
+		<span class="copyright">COOLWAREZSITE.COM <br> Copyright 2011 &copy; All Rights Reserved</span>
 	</footer>	
 </body>
 </html>
